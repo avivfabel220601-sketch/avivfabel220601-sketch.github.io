@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>יום 5 — ציטוט</title>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 1080px;
+      height: 1080px;
+      overflow: hidden;
+      font-family: 'Heebo', sans-serif;
+      direction: rtl;
+    }
+
+    .slide {
+      width: 1080px;
+      height: 1080px;
+      padding: 80px 100px;
+      position: relative;
+      background: linear-gradient(145deg, #0D3B5E 0%, #1A5C7A 55%, #1e7a8a 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .slide::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 55% 25%, rgba(43, 191, 160, 0.22) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .tag {
+      position: absolute;
+      top: 80px;
+      right: 80px;
+      font-size: 22px;
+      font-weight: 500;
+      color: #2BBFA0;
+    }
+
+    .quote-mark {
+      font-size: 120px;
+      font-weight: 900;
+      color: #2BBFA0;
+      opacity: 0.3;
+      line-height: 0.6;
+      position: relative;
+      align-self: flex-start;
+    }
+
+    .quote-text {
+      font-size: 48px;
+      font-weight: 900;
+      color: #fff;
+      text-align: center;
+      line-height: 1.25;
+      position: relative;
+    }
+
+    .quote-text span {
+      color: #2BBFA0;
+    }
+
+    .quote-sub {
+      font-size: 26px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.55);
+      text-align: center;
+      position: relative;
+    }
+
+    .deco-chart {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      pointer-events: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="slide">
+    <div class="tag">עקרון מפתח</div>
+    <div class="quote-mark">״</div>
+    <p class="quote-text">הידע שיש לכם<br>על הזכויות שלכם —<br>זה <span>המנוף שלכם</span> מול הבנק.</p>
+    <p class="quote-sub">יועץ משכנתא עצמאי · 2026</p>
+    <svg class="deco-chart" width="280" height="170" viewBox="0 0 280 170" fill="none">
+      <rect x="0" y="120" width="38" height="50" rx="5" fill="#fff" opacity="0.05" />
+      <rect x="48" y="93" width="38" height="77" rx="5" fill="#fff" opacity="0.08" />
+      <rect x="96" y="60" width="38" height="110" rx="5" fill="#fff" opacity="0.11" />
+      <rect x="144" y="32" width="38" height="138" rx="5" fill="#2BBFA0" opacity="0.22" />
+      <rect x="192" y="8" width="38" height="162" rx="5" fill="#2BBFA0" opacity="0.32" />
+      <rect x="240" y="28" width="38" height="142" rx="5" fill="#2BBFA0" opacity="0.16" />
+    </svg>
+  </div>
+</body>
+
+</html>
