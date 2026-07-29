@@ -101,6 +101,13 @@ img{max-width:100%;display:block}
 .hero-chip-icon{font-size:1.3rem}
 .hero-chip-meta{font-size:.78rem;font-weight:700;color:rgba(255,255,255,.8);line-height:1.4}
 
+/* ══ BANK STRIP ══ */
+.bank-strip{position:relative;z-index:1;padding:22px 0;border-top:1px solid var(--glass-border);border-bottom:1px solid var(--glass-border);background:rgba(255,255,255,.02)}
+.bank-strip-inner{text-align:center}
+.bank-strip-label{font-size:.78rem;font-weight:700;color:rgba(255,255,255,.4);margin-bottom:14px;letter-spacing:.02em}
+.bank-strip-names{display:flex;justify-content:center;flex-wrap:wrap;gap:10px 28px}
+.bank-strip-names span{font-size:.92rem;font-weight:800;color:rgba(255,255,255,.6)}
+
 /* ══ SERVICES ══ */
 .services{position:relative;z-index:1;padding:90px 0 70px;border-top:1px solid var(--glass-border)}
 .section-head{text-align:center;max-width:640px;margin:0 auto 48px}
@@ -112,7 +119,7 @@ img{max-width:100%;display:block}
 .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .service-card{background:var(--glass);backdrop-filter:blur(16px);border:1px solid var(--glass-border);border-radius:20px;padding:28px 24px;transition:transform .15s var(--ease),border-color .15s;display:flex;flex-direction:column}
 .service-card:hover{transform:translateY(-4px);border-color:rgba(43,191,160,.35)}
-.service-icon{font-size:28px;margin-bottom:14px}
+.service-icon{width:52px;height:52px;display:grid;place-items:center;font-size:24px;margin-bottom:14px;background:rgba(43,191,160,.1);border:1px solid rgba(43,191,160,.22);border-radius:14px}
 .service-card h3{font-size:1.08rem;font-weight:800;margin-bottom:8px}
 .service-card p{font-size:.88rem;color:rgba(255,255,255,.5);line-height:1.65;flex:1;margin-bottom:16px}
 .service-link{appearance:none;background:none;border:none;padding:0;font:700 .85rem/1 'Heebo',sans-serif;color:var(--teal);cursor:pointer;text-align:right;display:flex;align-items:center;gap:4px}
@@ -121,7 +128,7 @@ img{max-width:100%;display:block}
 .type-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:18px}
 .type-card{background:rgba(255,255,255,.03);border:1px solid var(--glass-border);border-radius:16px;padding:20px 18px;transition:transform .15s var(--ease),border-color .15s;display:flex;flex-direction:column}
 .type-card:hover{transform:translateY(-3px);border-color:rgba(43,191,160,.3)}
-.type-icon{font-size:22px;margin-bottom:10px}
+.type-icon{width:40px;height:40px;display:grid;place-items:center;font-size:18px;margin-bottom:10px;background:rgba(43,191,160,.08);border:1px solid rgba(43,191,160,.18);border-radius:11px}
 .type-card h3{font-size:.95rem;font-weight:800;margin-bottom:6px}
 .type-card p{font-size:.8rem;color:rgba(255,255,255,.48);line-height:1.55;flex:1;margin-bottom:12px}
 
@@ -147,13 +154,14 @@ img{max-width:100%;display:block}
 .about-body{flex:1;font-size:1.02rem;line-height:1.85;color:rgba(255,255,255,.65)}
 .about-body p{margin-bottom:16px}
 .about-body b{color:var(--white)}
-.pull-quote{border-inline-start:3px solid var(--teal);padding:6px 0 6px 20px;padding-inline-start:20px;margin:26px 0;font-size:1.25rem;font-weight:800;line-height:1.5}
+.pull-quote{border-inline-start:3px solid var(--teal);padding-block:6px;padding-inline-start:20px;margin:26px 0;font-size:1.25rem;font-weight:800;line-height:1.5}
 .value-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px}
 .value-chip{display:flex;align-items:center;gap:8px;background:rgba(43,191,160,.05);border:1px solid rgba(43,191,160,.14);border-radius:12px;padding:10px 16px;font-size:.85rem;font-weight:600;color:rgba(255,255,255,.75)}
 
 /* ══ WORKSHOP TEASER ══ */
-.workshop{position:relative;z-index:1;padding:70px 0;background:linear-gradient(180deg,transparent,rgba(43,191,160,.03) 12%,rgba(43,191,160,.03) 88%,transparent)}
-.ws-card{display:flex;align-items:center;gap:40px;background:var(--glass);border:1px solid var(--glass-border);border-radius:24px;padding:36px;backdrop-filter:blur(16px)}
+.workshop{position:relative;z-index:1;padding:70px 0;background:linear-gradient(180deg,transparent,rgba(240,178,94,.05) 12%,rgba(240,178,94,.05) 88%,transparent)}
+.ws-card{display:flex;align-items:center;gap:40px;background:linear-gradient(160deg,rgba(240,178,94,.08),var(--glass));border:1px solid rgba(240,178,94,.3);border-radius:24px;padding:36px;backdrop-filter:blur(16px)}
+.workshop .eyebrow{color:var(--gold)}
 .ws-photo{flex:0 0 220px;border-radius:18px;overflow:hidden}
 .ws-photo img{height:220px;object-fit:cover}
 .ws-body{flex:1}
@@ -162,6 +170,8 @@ img{max-width:100%;display:block}
 .ws-foot{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
 .ws-price{font-size:1.3rem;font-weight:900;color:var(--gold)}
 .ws-price span{font-size:.75rem;font-weight:600;color:rgba(255,255,255,.4);display:block}
+.ws-foot .btn-primary{background:linear-gradient(135deg,var(--gold),#f7c98a);color:var(--navy-deep);box-shadow:0 8px 30px rgba(240,178,94,.3)}
+.ws-foot .btn-primary:hover{box-shadow:0 12px 38px rgba(240,178,94,.4)}
 
 /* ══ CONTACT ══ */
 .contact{position:relative;z-index:1;padding:90px 0;border-top:1px solid var(--glass-border)}
@@ -205,6 +215,11 @@ footer{position:relative;z-index:1;border-top:1px solid var(--glass-border);padd
 .footer-links a:hover{color:var(--white)}
 .footer-copy{font-size:.75rem;color:rgba(255,255,255,.3);margin-top:20px;text-align:center}
 
+/* ══ WHATSAPP / STICKY CTA ══ */
+.wa-float{position:fixed;z-index:200;bottom:26px;left:26px;width:56px;height:56px;border-radius:50%;background:#25D366;display:grid;place-items:center;font-size:26px;text-decoration:none;box-shadow:0 10px 26px rgba(0,0,0,.35);transition:transform .15s}
+.wa-float:hover{transform:scale(1.08)}
+.sticky-cta{display:none}
+
 /* ══ RESPONSIVE ══ */
 @media(max-width:960px){
   .hero-inner{flex-direction:column-reverse}
@@ -225,6 +240,11 @@ footer{position:relative;z-index:1;border-top:1px solid var(--glass-border);padd
   .type-grid{grid-template-columns:1fr}
   .form-grid{grid-template-columns:1fr}
   .hero-trust{flex-direction:column;gap:8px}
+  body{padding-bottom:calc(70px + env(safe-area-inset-bottom))}
+  .wa-float{display:none}
+  .sticky-cta{display:flex;position:fixed;z-index:200;bottom:0;right:0;left:0;gap:10px;padding:12px 16px;padding-bottom:calc(12px + env(safe-area-inset-bottom));background:rgba(7,30,48,.96);backdrop-filter:blur(14px);border-top:1px solid var(--glass-border)}
+  .sticky-cta-wa{flex:0 0 auto;display:flex;align-items:center;gap:6px;background:#25D366;color:#fff;font:800 .88rem/1 'Heebo',sans-serif;padding:0 16px;border-radius:12px;text-decoration:none}
+  .sticky-cta-main{flex:1;text-align:center;background:linear-gradient(135deg,var(--teal),var(--teal-light));color:var(--navy-deep);font:800 .92rem/1 'Heebo',sans-serif;padding:14px;border-radius:12px;text-decoration:none}
 }
 </style>
 </head>
@@ -296,6 +316,16 @@ footer{position:relative;z-index:1;border-top:1px solid var(--glass-border);padd
         <div class="hero-chip-icon">🤝</div>
         <div class="hero-chip-meta">ליווי אישי<br>מהבקשה ועד החתימה</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ BANK STRIP ════ -->
+<section class="bank-strip">
+  <div class="wrap bank-strip-inner">
+    <div class="bank-strip-label">מנהל מו״מ ועובד מול כל הבנקים המובילים בישראל</div>
+    <div class="bank-strip-names">
+      <span>בנק לאומי</span><span>בנק הפועלים</span><span>בנק דיסקונט</span><span>מזרחי טפחות</span><span>הבנק הבינלאומי</span><span>בנק ירושלים</span>
     </div>
   </div>
 </section>
@@ -527,7 +557,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--glass-border);padd
       <div class="form-success" id="formSuccess">
         <div class="form-success-icon">🤝</div>
         <h3>קיבלתי!</h3>
-        <p>תודה שהשארתם פרטים — אני אחזור אליכם אישית תוך יום עסקים, ונדבר בדיוק על מה שסימנתם.</p>
+        <p>תודה שהשארתם פרטים — אני אחזור אליכם אישית בהקדם האפשרי, ונדבר בדיוק על מה שסימנתם.</p>
       </div>
     </div>
   </div>
@@ -556,11 +586,20 @@ footer{position:relative;z-index:1;border-top:1px solid var(--glass-border);padd
         <li><a href="#workshop">הסדנה הזוגית</a></li>
         <li><a href="#community">קהילה</a></li>
         <li><a href="tel:0507696147">050-7696147</a></li>
+        <li><a href="https://wa.me/972507696147?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%99%D7%99%D7%A2%D7%95%D7%A5" target="_blank" rel="noopener">וואטסאפ</a></li>
       </ul>
     </div>
     <div class="footer-copy">© מתפתחים פיננסית · יועץ משכנתא עצמאי · ליווי מלא עד חתימה בבנק</div>
   </div>
 </footer>
+
+<!-- ════ WHATSAPP (desktop floating + mobile sticky bar) ════ -->
+<a class="wa-float" href="https://wa.me/972507696147?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%99%D7%99%D7%A2%D7%95%D7%A5" target="_blank" rel="noopener" aria-label="שליחת הודעה בוואטסאפ">💬</a>
+
+<div class="sticky-cta">
+  <a class="sticky-cta-wa" href="https://wa.me/972507696147?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%99%D7%99%D7%A2%D7%95%D7%A5" target="_blank" rel="noopener">💬 וואטסאפ</a>
+  <a class="sticky-cta-main" href="#contact">לייעוץ אישי ←</a>
+</div>
 
 <script>
 /* mobile nav */
