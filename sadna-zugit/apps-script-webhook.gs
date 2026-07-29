@@ -17,6 +17,7 @@ function doPost(e) {
     lead.lastName || '',
     lead.phone || '',
     lead.email || '',
+    lead.interest || '',
     lead.source || '',
     lead.page || ''
   ]);
@@ -32,6 +33,6 @@ function getOrCreateSheet() {
   if (existing) return existing;
 
   const sheet = spreadsheet.insertSheet(SHEET_NAME);
-  sheet.appendRow(['תאריך', 'שם פרטי', 'שם משפחה', 'טלפון', 'אימייל', 'מקור', 'עמוד']);
+  sheet.appendRow(['תאריך', 'שם פרטי', 'שם משפחה', 'טלפון', 'אימייל', 'נושא', 'מקור', 'עמוד']);
   return sheet;
 }
