@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>המפה הפיננסית — CTA</title>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:1080px; height:1080px; overflow:hidden; font-family:'Heebo',sans-serif; direction:rtl; }
+.slide { width:1080px; height:1080px; padding:80px 100px; position:relative; background:linear-gradient(145deg, #0D3B5E 0%, #1A5C7A 55%, #2BBFA0 100%); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:36px; }
+.slide::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse at 55% 25%, rgba(43,191,160,0.25) 0%, transparent 60%); pointer-events:none; }
+.tag { position:absolute; top:80px; right:80px; font-size:22px; font-weight:500; color:#2BBFA0; }
+.dots { position:absolute; top:76px; left:80px; display:flex; gap:10px; }
+.dot { width:10px; height:10px; border-radius:50%; background:#2BBFA0; }
+.dot:nth-child(2) { opacity:0.55; } .dot:nth-child(3) { opacity:0.25; }
+.pre-label { font-size:22px; font-weight:500; color:rgba(255,255,255,0.5); text-transform:uppercase; letter-spacing:2px; text-align:center; position:relative; }
+h1 { font-size:58px; font-weight:900; color:#fff; text-align:center; line-height:1.2; position:relative; }
+h1 span { color:#2BBFA0; }
+.cta-box { position:relative; background:rgba(255,255,255,0.07); border:3px solid #2BBFA0; border-radius:24px; padding:30px 70px; display:flex; flex-direction:column; align-items:center; gap:10px; }
+.cta-icon { font-size:48px; line-height:1; }
+.cta-word { font-size:48px; font-weight:900; color:#2BBFA0; line-height:1; }
+.result { font-size:28px; font-weight:700; color:#fff; text-align:center; line-height:1.4; position:relative; }
+.result span { color:#2BBFA0; }
+.sub-note { font-size:22px; font-weight:400; color:rgba(255,255,255,0.5); text-align:center; position:relative; }
+.deco-chart { position:absolute; bottom:0; left:0; pointer-events:none; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="tag">הצעד הבא</div>
+  <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  <p class="pre-label">מוכנים להתחיל?</p>
+  <h1>בואו נבנה את <span>המפה<br>הפיננסית שלכם</span></h1>
+  <div class="cta-box">
+    <div class="cta-icon">📩</div>
+    <p class="cta-word">הרשמו עכשיו</p>
+  </div>
+  <p class="result">קישור להרשמה לוובינר ב-23.07 <span>בביו</span></p>
+  <p class="sub-note">📤 שתפו עם מי שצריך לראות את זה</p>
+  <svg class="deco-chart" width="280" height="170" viewBox="0 0 280 170" fill="none">
+    <rect x="0"   y="120" width="38" height="50"  rx="5" fill="#fff" opacity="0.05"/>
+    <rect x="48"  y="93"  width="38" height="77"  rx="5" fill="#fff" opacity="0.08"/>
+    <rect x="96"  y="60"  width="38" height="110" rx="5" fill="#fff" opacity="0.11"/>
+    <rect x="144" y="32"  width="38" height="138" rx="5" fill="#2BBFA0" opacity="0.22"/>
+    <rect x="192" y="8"   width="38" height="162" rx="5" fill="#2BBFA0" opacity="0.32"/>
+    <rect x="240" y="28"  width="38" height="142" rx="5" fill="#2BBFA0" opacity="0.16"/>
+  </svg>
+</div>
+</body>
+</html>

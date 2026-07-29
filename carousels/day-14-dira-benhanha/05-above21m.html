@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>דירה בהנחה — מעל 2.1M</title>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:1080px; height:1080px; overflow:hidden; font-family:'Heebo',sans-serif; direction:rtl; }
+.slide { width:1080px; height:1080px; padding:80px; position:relative; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:40px; background:linear-gradient(160deg, #0D3B5E 0%, #0a3348 70%, #0e4455 100%); }
+.tag { position:absolute; top:80px; right:80px; font-size:22px; font-weight:500; color:#2BBFA0; }
+h2 { font-size:46px; font-weight:900; color:#fff; text-align:center; line-height:1.25; max-width:820px; }
+h2 span { color:#2BBFA0; }
+.divider { width:80px; height:4px; background:linear-gradient(90deg,#2BBFA0,#00D97E); border-radius:2px; }
+.rule-card { width:100%; max-width:840px; background:rgba(43,191,160,0.12); border:2px solid rgba(43,191,160,0.5); border-radius:24px; padding:44px 56px; display:flex; align-items:center; gap:32px; }
+.rule-pct { font-size:96px; font-weight:900; color:#2BBFA0; line-height:1; flex-shrink:0; }
+.rule-body { display:flex; flex-direction:column; gap:10px; }
+.rule-label { font-size:20px; font-weight:500; color:rgba(255,255,255,0.65); }
+.rule-text { font-size:28px; font-weight:700; color:#fff; line-height:1.45; }
+.rule-text span { color:#2BBFA0; }
+.compare-box { width:100%; max-width:840px; background:rgba(255,255,255,0.06); border-radius:16px; padding:24px 36px; display:flex; justify-content:space-between; align-items:center; }
+.cmp-item { text-align:center; }
+.cmp-label { font-size:18px; font-weight:500; color:rgba(255,255,255,0.55); margin-bottom:6px; }
+.cmp-val { font-size:28px; font-weight:900; color:#fff; }
+.cmp-val.red { color:#E05050; }
+.cmp-sep { font-size:36px; color:rgba(255,255,255,0.3); }
+.trust-line { position:absolute; bottom:80px; right:80px; font-size:20px; font-weight:500; color:rgba(255,255,255,0.4); }
+.deco { position:absolute; bottom:0; left:0; pointer-events:none; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="tag">תוכנית דירה בהנחה</div>
+  <h2>דירה בעלות <span>מעל 2,100,000 ש"ח?</span></h2>
+  <div class="divider"></div>
+  <div class="rule-card">
+    <span class="rule-pct">25%</span>
+    <div class="rule-body">
+      <p class="rule-label">הון עצמי נדרש</p>
+      <p class="rule-text">בדיוק כמו <span>שוק חופשי רגיל</span> — אין הקלה על ההון העצמי</p>
+    </div>
+  </div>
+  <div class="compare-box">
+    <div class="cmp-item">
+      <p class="cmp-label">דירה עד 1.675M</p>
+      <p class="cmp-val">100,000 ש"ח</p>
+    </div>
+    <span class="cmp-sep">←</span>
+    <div class="cmp-item">
+      <p class="cmp-label">דירה מעל 2.1M</p>
+      <p class="cmp-val red">25% עצמי ממחיר הרכישה</p>
+    </div>
+  </div>
+  <p class="trust-line">✦ יועץ משכנתא עצמאי | ליווי מלא עד חתימה</p>
+  <svg class="deco" width="280" height="170" viewBox="0 0 280 170" fill="none">
+    <rect x="0"   y="120" width="38" height="50"  rx="5" fill="#fff" opacity="0.04"/>
+    <rect x="48"  y="93"  width="38" height="77"  rx="5" fill="#fff" opacity="0.07"/>
+    <rect x="96"  y="60"  width="38" height="110" rx="5" fill="#fff" opacity="0.10"/>
+    <rect x="144" y="32"  width="38" height="138" rx="5" fill="#2BBFA0" opacity="0.20"/>
+    <rect x="192" y="8"   width="38" height="162" rx="5" fill="#2BBFA0" opacity="0.30"/>
+    <rect x="240" y="28"  width="38" height="142" rx="5" fill="#2BBFA0" opacity="0.15"/>
+  </svg>
+</div>
+</body>
+</html>

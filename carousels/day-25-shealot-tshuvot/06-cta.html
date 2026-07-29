@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>שאלות ותשובות — CTA</title>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:1080px; height:1920px; overflow:hidden; font-family:'Heebo',sans-serif; direction:rtl; background:#0D3B5E; }
+.slide { width:1080px; height:1920px; position:relative; display:flex; flex-direction:column; }
+.photo-wrap { width:100%; height:1000px; position:relative; overflow:hidden; flex-shrink:0; }
+.photo-wrap img { width:100%; height:100%; object-fit:cover; object-position:center 30%; display:block; }
+.photo-fade { position:absolute; left:0; right:0; bottom:0; height:300px; background:linear-gradient(180deg, rgba(13,59,94,0) 0%, #0D3B5E 100%); }
+.tag { position:absolute; top:56px; right:56px; font-size:24px; font-weight:500; color:#fff; background:rgba(13,59,94,0.55); padding:10px 24px; border-radius:999px; backdrop-filter:blur(4px); }
+.content { flex:1; min-height:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:22px; padding:24px 64px 56px; background:linear-gradient(160deg, #0D3B5E 0%, #0a3348 60%, #0e4455 100%); }
+.badge { background:#2BBFA0; color:#0D3B5E; font-size:20px; font-weight:900; padding:8px 22px; border-radius:999px; letter-spacing:0.3px; }
+h2 { font-size:46px; font-weight:900; color:#fff; text-align:center; line-height:1.22; max-width:860px; }
+h2 span { color:#2BBFA0; }
+.sub { font-size:24px; font-weight:500; color:rgba(255,255,255,0.72); text-align:center; max-width:740px; line-height:1.5; }
+.cta-list { width:100%; max-width:800px; display:flex; flex-direction:column; gap:14px; }
+.cta-item { background:rgba(43,191,160,0.12); border:1.5px solid rgba(43,191,160,0.35); border-radius:14px; padding:16px 26px; font-size:22px; font-weight:700; color:#fff; display:flex; align-items:center; gap:16px; }
+.cta-item span { color:#2BBFA0; font-size:26px; flex-shrink:0; }
+.divider { width:80px; height:4px; background:linear-gradient(90deg,#2BBFA0,#00D97E); border-radius:2px; }
+.name-line { font-size:22px; font-weight:500; color:rgba(255,255,255,0.6); text-align:center; }
+.phone-line { font-size:24px; font-weight:700; color:#2BBFA0; text-align:center; }
+.swipe { display:flex; flex-direction:column; align-items:center; gap:4px; }
+.swipe-arrow { font-size:30px; color:#2BBFA0; animation:bob 1.6s ease-in-out infinite; }
+.swipe-text { font-size:20px; font-weight:700; color:rgba(255,255,255,0.8); }
+@keyframes bob { 0%,100% { transform:translateY(0); } 50% { transform:translateY(8px); } }
+.deco { position:absolute; bottom:0; left:0; pointer-events:none; opacity:0.5; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="photo-wrap">
+    <img src="06-cta-photo.png" alt="">
+    <div class="photo-fade"></div>
+    <span class="tag">✦ שאלות ותשובות</span>
+  </div>
+  <div class="content">
+    <span class="badge">✦ אפיון פיננסי חינמי ✦</span>
+    <h2>רוצים לדעת <span>בוודאות</span>,<br>לא בהרגשה?</h2>
+    <div class="divider"></div>
+    <p class="sub">20-30 דקות שבהן בודקים את המספרים שלכם ונותנים תשובה ברורה — בלי לחץ, בלי התחייבות</p>
+    <div class="cta-list">
+      <div class="cta-item"><span>✓</span> האם זה נכון לכם לרכוש נכס עכשיו</div>
+      <div class="cta-item"><span>✓</span> מה התקציב הריאלי שלכם</div>
+      <div class="cta-item"><span>✓</span> מה הצעד הראשון הנכון</div>
+    </div>
+    <p class="name-line">אביב פבל | יועץ משכנתאות עצמאי</p>
+    <p class="phone-line">050-7696147</p>
+    <div class="swipe">
+      <span class="swipe-arrow">⬆</span>
+      <span class="swipe-text">החליקו למעלה / שלחו הודעה לקביעת אפיון</span>
+    </div>
+  </div>
+  <svg class="deco" width="260" height="150" viewBox="0 0 260 150" fill="none">
+    <rect x="0"   y="105" width="34" height="45" rx="5" fill="#fff" opacity="0.04"/>
+    <rect x="44"  y="82"  width="34" height="68" rx="5" fill="#fff" opacity="0.06"/>
+    <rect x="88"  y="54"  width="34" height="96" rx="5" fill="#fff" opacity="0.08"/>
+    <rect x="132" y="30"  width="34" height="120" rx="5" fill="#2BBFA0" opacity="0.18"/>
+    <rect x="176" y="10"  width="34" height="140" rx="5" fill="#2BBFA0" opacity="0.26"/>
+    <rect x="220" y="26"  width="34" height="124" rx="5" fill="#2BBFA0" opacity="0.14"/>
+  </svg>
+</div>
+</body>
+</html>

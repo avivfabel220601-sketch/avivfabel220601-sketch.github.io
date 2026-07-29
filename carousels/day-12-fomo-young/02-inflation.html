@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>למה הכסף שלך תקוע — אינפלציה</title>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:1080px; height:1080px; overflow:hidden; font-family:'Heebo',sans-serif; background:#EBF7F5; direction:rtl; }
+.slide { width:1080px; height:1080px; padding:80px; position:relative; display:flex; flex-direction:column; justify-content:center; gap:28px; }
+.tag { position:absolute; top:80px; right:80px; font-size:22px; font-weight:500; color:#2BBFA0; }
+h2 { font-size:54px; font-weight:900; color:#0D3B5E; line-height:1.2; }
+.melt-card { background:#0D3B5E; border-radius:22px; padding:40px 50px; display:flex; align-items:center; gap:36px; }
+.melt-visual { font-size:90px; flex-shrink:0; opacity:0.9; }
+.melt-bars { display:flex; align-items:flex-end; gap:10px; height:120px; }
+.melt-bar { width:30px; border-radius:6px 6px 0 0; background:#4DB6AC; }
+.melt-text { font-size:24px; font-weight:700; color:#fff; line-height:1.5; }
+.melt-text span { color:#2BBFA0; }
+.stat-row { display:flex; gap:16px; }
+.stat-chip { flex:1; background:#fff; border-radius:14px; padding:18px 20px; text-align:center; box-shadow:0 2px 16px rgba(13,59,94,0.07); }
+.stat-num { font-size:30px; font-weight:900; color:#0D3B5E; }
+.stat-label { font-size:18px; font-weight:500; color:#4A6A7A; margin-top:4px; }
+.trust-line { position:absolute; bottom:90px; right:80px; font-size:20px; font-weight:500; color:#4A6A7A; opacity:0.75; }
+.deco-chart { position:absolute; bottom:0; left:0; pointer-events:none; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="tag">סיבה #1</div>
+  <h2>הפיקדון בבנק?<br>האינפלציה אוכלת אותו.</h2>
+  <div class="melt-card">
+    <span class="melt-visual">🧊</span>
+    <div class="melt-bars">
+      <div class="melt-bar" style="height:100px;"></div>
+      <div class="melt-bar" style="height:70px;"></div>
+      <div class="melt-bar" style="height:40px; opacity:0.6;"></div>
+    </div>
+    <p class="melt-text">ריבית הפיקדון לא מדביקה את יוקר המחיה. <span>כל חודש שעומד — שווה פחות.</span></p>
+  </div>
+  <div class="stat-row">
+    <div class="stat-chip">
+      <div class="stat-num">₪0</div>
+      <div class="stat-label">תשואה ריאלית מעו"ש</div>
+    </div>
+    <div class="stat-chip">
+      <div class="stat-num">↓</div>
+      <div class="stat-label">כוח קנייה נשחק</div>
+    </div>
+    <div class="stat-chip">
+      <div class="stat-num">12</div>
+      <div class="stat-label">חודשים = שחיקה משמעותית</div>
+    </div>
+  </div>
+  <p class="trust-line">✦ יועץ משכנתא עצמאי | ליווי מלא עד חתימה</p>
+  <svg class="deco-chart" width="280" height="170" viewBox="0 0 280 170" fill="none">
+    <rect x="0"   y="120" width="38" height="50"  rx="5" fill="#4DB6AC" opacity="0.22"/>
+    <rect x="48"  y="93"  width="38" height="77"  rx="5" fill="#4DB6AC" opacity="0.32"/>
+    <rect x="96"  y="60"  width="38" height="110" rx="5" fill="#4DB6AC" opacity="0.44"/>
+    <rect x="144" y="32"  width="38" height="138" rx="5" fill="#2BBFA0" opacity="0.52"/>
+    <rect x="192" y="8"   width="38" height="162" rx="5" fill="#2BBFA0" opacity="0.62"/>
+    <rect x="240" y="28"  width="38" height="142" rx="5" fill="#2BBFA0" opacity="0.38"/>
+  </svg>
+</div>
+</body>
+</html>

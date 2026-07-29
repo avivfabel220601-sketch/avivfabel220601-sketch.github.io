@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>מודעה — מחזור משכנתא</title>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:1080px; height:1080px; overflow:hidden; font-family:'Heebo',sans-serif; direction:rtl; background:#0D3B5E; }
+.slide {
+  width:1080px; height:1080px; position:relative;
+  background: radial-gradient(ellipse at 50% 30%, #1A5C7A 0%, #0D3B5E 80%);
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  overflow:hidden;
+}
+.glow-top {
+  position:absolute; top:-250px; left:50%; transform:translateX(-50%);
+  width:800px; height:800px; border-radius:50%;
+  background:radial-gradient(circle, rgba(43,191,160,0.2) 0%, transparent 65%);
+  pointer-events:none;
+}
+.corner-tl { position:absolute; top:50px; right:50px; width:55px; height:55px; border-top:3px solid rgba(43,191,160,0.45); border-right:3px solid rgba(43,191,160,0.45); }
+.corner-br { position:absolute; bottom:80px; left:50px; width:55px; height:55px; border-bottom:3px solid rgba(43,191,160,0.15); border-left:3px solid rgba(43,191,160,0.15); }
+.dot-grid { position:absolute; top:0; right:0; width:380px; height:380px; opacity:0.5; pointer-events:none; background-image:radial-gradient(rgba(43,191,160,0.18) 1.5px, transparent 1.5px); background-size:26px 26px; -webkit-mask-image:radial-gradient(circle at 100% 0%, #000 0%, transparent 70%); mask-image:radial-gradient(circle at 100% 0%, #000 0%, transparent 70%); }
+.deco-chart { position:absolute; bottom:60px; left:0; pointer-events:none; opacity:0.9; }
+
+.content { position:relative; z-index:2; display:flex; flex-direction:column; align-items:center; gap:28px; padding:70px 80px; }
+
+.top-badge {
+  background:rgba(43,191,160,0.1); border:2px solid rgba(43,191,160,0.35);
+  border-radius:999px; padding:10px 34px;
+  font-size:22px; font-weight:800; color:#2BBFA0; letter-spacing:4px;
+}
+
+h1 { font-size:62px; font-weight:900; color:#fff; text-align:center; line-height:1.1; }
+
+.money-block { display:flex; align-items:flex-start; gap:6px; margin:8px 0; }
+.money-symbol {
+  font-size:58px; font-weight:900; color:#2BBFA0; line-height:1;
+  margin-top:18px;
+  text-shadow: 0 0 30px rgba(43,191,160,0.4);
+}
+.money-amount {
+  font-size:160px; font-weight:900; line-height:0.85;
+  background: linear-gradient(180deg, #2BBFA0 20%, #4DB6AC 100%);
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+  filter: drop-shadow(0 0 40px rgba(43,191,160,0.3));
+}
+.money-label {
+  font-size:28px; font-weight:700; color:#4DB6AC; letter-spacing:2px;
+  margin-top:-8px;
+}
+
+.subtitle {
+  font-size:26px; font-weight:700; color:rgba(255,255,255,0.75); text-align:center;
+  line-height:1.55; max-width:780px;
+}
+.subtitle strong { color:#fff; font-weight:900; }
+
+.accent-line { width:70px; height:4px; background:#2BBFA0; border-radius:2px; }
+
+.pain-line {
+  font-size:30px; font-weight:800; color:#fff; text-align:center; line-height:1.4;
+}
+.pain-line span { color:#4DB6AC; }
+
+.cta-btn {
+  background: linear-gradient(135deg, #2BBFA0 0%, #4DB6AC 100%);
+  border-radius:20px; padding:28px 60px;
+  box-shadow: 0 0 50px rgba(43,191,160,0.3), 0 12px 40px rgba(13,59,94,0.4);
+  text-align:center;
+  max-width:780px;
+}
+.cta-main {
+  font-size:34px; font-weight:900; color:#0D3B5E; line-height:1.2;
+}
+.cta-sub {
+  font-size:20px; font-weight:700; color:rgba(13,59,94,0.55); margin-top:6px;
+}
+
+.bottom-bar {
+  position:absolute; bottom:0; left:0; right:0; height:60px;
+  background:rgba(43,191,160,0.05); border-top:1px solid rgba(43,191,160,0.12);
+  display:flex; align-items:center; justify-content:center; gap:36px;
+}
+.bottom-item { font-size:17px; font-weight:500; color:rgba(255,255,255,0.35); }
+.bottom-item strong { color:#2BBFA0; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="glow-top"></div>
+  <div class="dot-grid"></div>
+  <div class="corner-tl"></div>
+  <div class="corner-br"></div>
+
+  <div class="content">
+    <div class="top-badge">מחזור משכנתא</div>
+
+    <h1>יש לכם משכנתא?<br>כנראה שאתם משלמים<br>יותר מדי.</h1>
+
+    <div class="money-block">
+      <span class="money-symbol">₪</span>
+      <span class="money-amount">87,000</span>
+    </div>
+    <div class="money-label">חיסכון ממוצע ללקוחות שלנו</div>
+
+    <div class="accent-line"></div>
+
+    <p class="subtitle">
+      <strong>72% מבעלי המשכנתאות</strong> משלמים ריבית גבוהה מהנדרש.<br>
+      תוך 10 דקות נדע בדיוק כמה כסף אתם מפסידים — <strong>כל חודש.</strong>
+    </p>
+
+    <p class="pain-line">כל יום שעובר = <span>עוד כסף שנשרף</span></p>
+
+    <div class="cta-btn">
+      <div class="cta-main">כתבו לי ״מחזור״ ← ותקבלו בדיקה אישית חינם</div>
+      <div class="cta-sub">בלי התחייבות. בלי שיחות מכירה. רק מספרים.</div>
+    </div>
+  </div>
+
+  <div class="bottom-bar">
+    <span class="bottom-item"><strong>✦</strong> יועץ משכנתא עצמאי</span>
+    <span class="bottom-item"><strong>✦</strong> ליווי מלא עד חתימה</span>
+    <span class="bottom-item"><strong>✦</strong> +320 לקוחות חסכו השנה</span>
+  </div>
+
+  <svg class="deco-chart" width="260" height="150" viewBox="0 0 260 150" fill="none">
+    <rect x="0"   y="105" width="34" height="45" rx="5" fill="#fff" opacity="0.04"/>
+    <rect x="44"  y="82"  width="34" height="68" rx="5" fill="#fff" opacity="0.06"/>
+    <rect x="88"  y="54"  width="34" height="96" rx="5" fill="#fff" opacity="0.08"/>
+    <rect x="132" y="30"  width="34" height="120" rx="5" fill="#2BBFA0" opacity="0.18"/>
+    <rect x="176" y="8"   width="34" height="142" rx="5" fill="#2BBFA0" opacity="0.26"/>
+  </svg>
+</div>
+</body>
+</html>

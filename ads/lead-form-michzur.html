@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>בדיקת משכנתא חינם — גלו כמה תחסכו | מתפתחים פיננסית</title>
+<meta name="description" content="72% מבעלי המשכנתאות משלמים ריבית גבוהה מהנדרש. בדיקה חינם תוך 10 דקות — גלו כמה תחסכו. ללא התחייבות.">
+<link rel="canonical" href="YOUR_DOMAIN/lead-form-michzur">
+<meta property="og:type" content="website"><meta property="og:locale" content="he_IL">
+<meta property="og:title" content="גלו כמה כסף אתם מפסידים על המשכנתא — בדיקה חינם">
+<meta property="og:description" content="לקוחות שלנו חוסכים בממוצע ₪87,000. בדיקה אישית תוך 10 דקות, ללא התחייבות.">
+<meta property="og:image" content="YOUR_DOMAIN/ad-01-michzur.png">
+<meta property="og:url" content="YOUR_DOMAIN/lead-form-michzur">
+<meta property="og:site_name" content="מתפתחים פיננסית">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="גלו כמה כסף אתם מפסידים על המשכנתא — בדיקה חינם">
+<meta name="twitter:image" content="YOUR_DOMAIN/ad-01-michzur.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='20' width='100' height='100' fill='%230D3B5E'/><text x='50' y='68' text-anchor='middle' font-size='55'>🌱</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Facebook Pixel — החלף YOUR_PIXEL_ID -->
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','YOUR_PIXEL_ID');fbq('track','PageView');</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0D3B5E;--deep:#061828;--mid:#1A5C7A;
+  --teal:#2BBFA0;--teal2:#4DB6AC;--teal-g:rgba(43,191,160,0.15);
+  --red:#FF6B6B;--w:#fff;
+  --glass:rgba(13,59,94,0.55);--gb:rgba(43,191,160,0.14);
+  --e:cubic-bezier(.4,0,.2,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Heebo',sans-serif;direction:rtl;background:var(--deep);min-height:100vh;overflow-x:hidden;-webkit-font-smoothing:antialiased;color:var(--w)}
+
+/* ═══ AURORA BACKGROUND ═══ */
+.aurora{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.aurora .orb{position:absolute;border-radius:50%;filter:blur(80px);opacity:.6;will-change:transform}
+.aurora .orb-1{width:600px;height:600px;top:-15%;left:40%;background:radial-gradient(circle,rgba(43,191,160,0.14),transparent 70%);animation:float1 14s ease-in-out infinite}
+.aurora .orb-2{width:400px;height:400px;bottom:-10%;right:10%;background:radial-gradient(circle,rgba(77,182,172,0.08),transparent 70%);animation:float2 18s ease-in-out infinite}
+.aurora .orb-3{width:300px;height:300px;top:40%;left:-5%;background:radial-gradient(circle,rgba(26,92,122,0.1),transparent 70%);animation:float3 12s ease-in-out infinite}
+
+/* ═══ GRAIN OVERLAY ═══ */
+.grain{position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.035;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat:repeat;background-size:200px
+}
+
+.page{position:relative;z-index:2;max-width:660px;margin:0 auto;padding:24px 20px 50px}
+
+/* ═══ REVEAL ANIMATION ═══ */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s var(--e),transform .6s var(--e)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* ═══ TICKER ═══ */
+.ticker{
+  background:linear-gradient(90deg,var(--teal),#1a8a72,var(--teal));
+  background-size:200% 100%;animation:shimmer 3s linear infinite;
+  padding:11px 20px;text-align:center;font-size:13px;font-weight:700;
+  color:var(--deep);border-radius:14px;margin-bottom:26px;
+  box-shadow:0 4px 24px rgba(43,191,160,0.2);
+}
+
+/* ═══ TRUST BAR ═══ */
+.tbar{display:flex;align-items:center;justify-content:center;gap:20px;padding-bottom:18px;margin-bottom:26px;border-bottom:1px solid var(--gb)}
+.tbar span{font-size:12px;font-weight:600;color:rgba(255,255,255,0.32);display:flex;align-items:center;gap:6px}
+.tbar .dot{width:5px;height:5px;border-radius:50%;background:var(--teal);animation:pulse 2s ease infinite}
+
+/* ═══ HERO ═══ */
+.hero{text-align:center;margin-bottom:30px}
+.badge{display:inline-flex;align-items:center;gap:6px;background:rgba(43,191,160,0.07);border:1.5px solid rgba(43,191,160,0.22);border-radius:999px;padding:7px 22px;font-size:12px;font-weight:700;color:var(--teal);letter-spacing:2.5px;margin-bottom:16px}
+h1{font-size:clamp(26px,5.5vw,40px);font-weight:900;line-height:1.18;margin-bottom:14px}
+.gr{background:linear-gradient(135deg,var(--teal),var(--teal2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.rd{color:var(--red)}
+.hero p{font-size:clamp(14px,2.6vw,17px);font-weight:500;color:rgba(255,255,255,0.5);line-height:1.65;max-width:520px;margin:0 auto}
+.hero p b{color:rgba(255,255,255,0.85);font-weight:700}
+
+/* ═══ GLOW CARD (shared) ═══ */
+.gc{
+  background:var(--glass);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border:1px solid var(--gb);border-radius:20px;
+  position:relative;overflow:hidden;
+  transition:transform .25s var(--e),box-shadow .25s var(--e);
+}
+.gc::before{content:'';position:absolute;inset:-1px;border-radius:inherit;
+  background:linear-gradient(135deg,rgba(43,191,160,0.12),transparent 40%,transparent 60%,rgba(43,191,160,0.06));
+  z-index:-1;pointer-events:none;mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  mask-composite:xor;-webkit-mask-composite:xor;padding:1px}
+.gc:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(43,191,160,0.08)}
+
+/* ═══ COMPARE ═══ */
+.compare{display:grid;grid-template-columns:1fr 44px 1fr;border-radius:20px;overflow:hidden;border:1px solid var(--gb);margin-bottom:24px}
+.cmp{padding:22px 16px;text-align:center;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.cmp-b{background:rgba(255,107,107,0.05)}
+.cmp-a{background:rgba(43,191,160,0.05)}
+.cmp-m{display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,rgba(255,107,107,0.05),rgba(43,191,160,0.05))}
+.cmp-arr{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--teal2));display:grid;place-items:center;box-shadow:0 0 20px rgba(43,191,160,0.35);animation:pulse 3s ease infinite}
+.cmp-tag{font-size:10px;font-weight:700;letter-spacing:1.5px;padding:4px 11px;border-radius:999px;display:inline-block;margin-bottom:10px}
+.cmp-b .cmp-tag{color:var(--red);background:rgba(255,107,107,0.1);border:1px solid rgba(255,107,107,0.15)}
+.cmp-a .cmp-tag{color:var(--teal);background:rgba(43,191,160,0.1);border:1px solid rgba(43,191,160,0.15)}
+.cmp-num{font-size:clamp(28px,5vw,36px);font-weight:900;line-height:1;margin-bottom:4px}
+.cmp-b .cmp-num{color:var(--red)}
+.cmp-a .cmp-num{background:linear-gradient(180deg,var(--teal),var(--teal2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.cmp-lbl{font-size:11px;font-weight:500;color:rgba(255,255,255,0.35);margin-bottom:6px}
+.cmp-rate{font-size:12px;font-weight:700;padding:4px 11px;border-radius:8px;display:inline-block}
+.cmp-b .cmp-rate{color:rgba(255,107,107,0.7);background:rgba(255,107,107,0.06)}
+.cmp-a .cmp-rate{color:var(--teal);background:rgba(43,191,160,0.06)}
+
+/* ═══ SAVINGS ═══ */
+.savings{padding:20px;text-align:center;margin-bottom:24px}
+.savings-n{font-size:clamp(30px,6vw,44px);font-weight:900;background:linear-gradient(135deg,var(--teal),var(--teal2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1;filter:drop-shadow(0 0 20px rgba(43,191,160,0.2))}
+.savings-l{font-size:14px;font-weight:700;color:var(--w);margin-top:4px}
+.savings-s{font-size:11px;font-weight:500;color:rgba(255,255,255,0.3);margin-top:2px}
+
+/* ═══ STORIES ═══ */
+.stories{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:24px}
+.story{padding:18px 14px}
+.story-e{font-size:22px;margin-bottom:6px;display:block}
+.story-t{font-size:13px;font-weight:800;margin-bottom:2px}
+.story-d{font-size:11px;font-weight:500;color:rgba(255,255,255,0.38);line-height:1.5;margin-bottom:8px}
+.story-r{background:rgba(43,191,160,0.06);border:1px solid rgba(43,191,160,0.1);border-radius:12px;padding:10px}
+.story-rn{font-size:17px;font-weight:900;color:var(--teal);display:block;margin-bottom:2px}
+.story-rt{font-size:11px;font-weight:600;color:rgba(255,255,255,0.45);line-height:1.3}
+
+/* ═══ PAINS ═══ */
+.pains{display:flex;flex-direction:column;gap:8px;margin-bottom:24px}
+.pain{display:flex;align-items:center;gap:12px;background:rgba(255,107,107,0.03);border:1px solid rgba(255,107,107,0.07);border-radius:14px;padding:12px 16px;transition:transform .2s var(--e),border-color .2s}
+.pain:hover{transform:translateX(-4px);border-color:rgba(255,107,107,0.15)}
+.pain-i{width:34px;height:34px;flex-shrink:0;background:rgba(255,107,107,0.07);border-radius:10px;display:grid;place-items:center;font-size:15px}
+.pain-t{font-size:14px;font-weight:600;color:rgba(255,255,255,0.6);line-height:1.4}
+.pain-t b{color:var(--red);font-weight:800}
+
+/* ═══ CTA BANNER ═══ */
+.cta-ban{
+  background:linear-gradient(135deg,var(--teal),#1a8a72);
+  border-radius:16px;padding:18px 24px;text-align:center;
+  margin-bottom:24px;position:relative;overflow:hidden;
+  box-shadow:0 4px 30px rgba(43,191,160,0.15);
+}
+.cta-ban::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.1),transparent);background-size:200% 100%;animation:shimmer 2.5s linear infinite}
+.cta-ban h2{font-size:18px;font-weight:900;color:var(--deep);position:relative}
+.cta-ban p{font-size:13px;font-weight:600;color:rgba(6,24,40,0.5);margin-top:3px;position:relative}
+
+/* ═══════════ FORM CARD ═══════════ */
+.fcard{
+  background:var(--glass);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+  border:1.5px solid var(--gb);border-radius:24px;
+  padding:32px 24px 28px;margin-bottom:24px;
+  box-shadow:0 0 80px rgba(43,191,160,0.05),0 24px 60px rgba(0,0,0,0.2);
+  position:relative;overflow:hidden;
+}
+.fcard::before{content:'';position:absolute;top:-40px;left:50%;transform:translateX(-50%);width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(43,191,160,0.04),transparent 55%);pointer-events:none}
+.fcard::after{content:'';position:absolute;inset:-1px;border-radius:inherit;
+  background:conic-gradient(from 180deg,rgba(43,191,160,0.15),transparent 25%,transparent 75%,rgba(43,191,160,0.08));
+  z-index:-1;pointer-events:none;mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  mask-composite:xor;-webkit-mask-composite:xor;padding:1.5px}
+
+.fh{text-align:center;margin-bottom:22px;position:relative}
+.fh-eye{display:inline-block;font-size:10px;font-weight:700;color:var(--teal);letter-spacing:2.5px;background:rgba(43,191,160,0.07);border:1px solid rgba(43,191,160,0.18);border-radius:999px;padding:5px 16px;margin-bottom:10px}
+.fh-t{font-size:23px;font-weight:900;margin-bottom:4px}
+.fh-s{font-size:13px;font-weight:500;color:rgba(255,255,255,0.4)}
+
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;position:relative}
+.fg{display:flex;flex-direction:column;gap:5px}
+.fg.full{grid-column:1/-1}
+.fl{font-size:12px;font-weight:600;color:rgba(255,255,255,0.5)}
+.fl .r{color:var(--teal);font-weight:800}
+
+.fi,.fsel{
+  width:100%;padding:13px 16px;
+  background:rgba(255,255,255,0.04);
+  border:1.5px solid rgba(255,255,255,0.08);
+  border-radius:12px;
+  font:500 15px/1 'Heebo',sans-serif;color:var(--w);
+  outline:none;direction:rtl;
+  transition:border-color .25s,box-shadow .25s,background .25s;
+}
+.fi::placeholder{color:rgba(255,255,255,0.2)}
+.fi:focus,.fsel:focus{
+  border-color:rgba(43,191,160,0.5);
+  box-shadow:0 0 0 4px rgba(43,191,160,0.08),0 0 20px rgba(43,191,160,0.06);
+  background:rgba(255,255,255,0.06);
+}
+.fsel{
+  appearance:none;-webkit-appearance:none;cursor:pointer;
+  background-image:url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%232BBFA0' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:left 14px center;padding-left:36px;
+}
+.fsel option{background:var(--navy);color:var(--w)}
+
+.fbtn{
+  width:100%;padding:16px;
+  background:linear-gradient(135deg,var(--teal),var(--teal2));
+  border:none;border-radius:14px;
+  font:800 17px/1 'Heebo',sans-serif;color:var(--deep);
+  cursor:pointer;position:relative;overflow:hidden;
+  box-shadow:0 4px 24px rgba(43,191,160,0.25),0 0 0 0 rgba(43,191,160,0.4);
+  transition:transform .15s var(--e),box-shadow .3s var(--e);
+  animation:btnPulse 3s ease infinite;
+}
+.fbtn:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(43,191,160,0.35)}
+.fbtn:active{transform:translateY(0);animation:none}
+.fbtn::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent 20%,rgba(255,255,255,0.18) 50%,transparent 80%);background-size:200% 100%;animation:shimmer 2s linear infinite}
+.fbtn span{position:relative;z-index:1}
+
+.fnote{text-align:center;margin-top:14px;font-size:11px;font-weight:500;color:rgba(255,255,255,0.28);display:flex;align-items:center;justify-content:center;gap:6px}
+.fnote svg{flex-shrink:0}
+
+/* ═══ SUCCESS ═══ */
+.fsuc{display:none;text-align:center;padding:36px 20px}
+.fsuc.on{display:block;animation:fadeUp .5s var(--e)}
+.fsuc-i{font-size:52px;margin-bottom:12px;animation:popIn .5s var(--e)}
+.fsuc h3{font-size:22px;font-weight:900;margin-bottom:6px}
+.fsuc p{font-size:14px;font-weight:500;color:rgba(255,255,255,0.45);line-height:1.6}
+
+/* ═══ TRUST BADGES ═══ */
+.tbadges{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-top:18px}
+.tb{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600;color:rgba(255,255,255,0.4)}
+.tb-i{width:28px;height:28px;background:rgba(43,191,160,0.06);border:1px solid rgba(43,191,160,0.12);border-radius:8px;display:grid;place-items:center;flex-shrink:0}
+.tb-i svg{width:13px;height:13px}
+
+/* ═══ SOCIAL ═══ */
+.social{text-align:center;margin-bottom:24px}
+.avs{display:flex;justify-content:center;margin-bottom:8px}
+.av{width:32px;height:32px;border-radius:50%;border:2px solid var(--deep);margin-right:-7px;display:grid;place-items:center;font-size:11px;font-weight:700}
+.av:nth-child(1){background:linear-gradient(135deg,var(--teal),#1a8a72)}
+.av:nth-child(2){background:linear-gradient(135deg,var(--teal2),var(--teal))}
+.av:nth-child(3){background:linear-gradient(135deg,var(--navy),var(--mid))}
+.av:nth-child(4){background:linear-gradient(135deg,var(--mid),var(--teal2))}
+.av:last-child{background:rgba(43,191,160,0.1);border-color:rgba(43,191,160,0.2);font-size:9px;font-weight:800;color:var(--teal)}
+.social p{font-size:12px;font-weight:600;color:rgba(255,255,255,0.38)}
+.social p b{color:rgba(255,255,255,0.8);font-weight:700}
+
+.foot{text-align:center;padding-top:16px;border-top:1px solid rgba(43,191,160,0.06)}
+.foot p{font-size:11px;font-weight:500;color:rgba(255,255,255,0.2)}
+
+/* ═══ KEYFRAMES ═══ */
+@keyframes float1{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(30px,-40px) scale(1.05)}66%{transform:translate(-20px,20px) scale(.97)}}
+@keyframes float2{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-40px,-30px) scale(1.06)}}
+@keyframes float3{0%,100%{transform:translate(0,0)}50%{transform:translate(25px,35px)}}
+@keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(.92)}}
+@keyframes btnPulse{0%,100%{box-shadow:0 4px 24px rgba(43,191,160,0.25),0 0 0 0 rgba(43,191,160,0.3)}50%{box-shadow:0 4px 24px rgba(43,191,160,0.25),0 0 0 8px rgba(43,191,160,0)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes popIn{0%{transform:scale(0)}60%{transform:scale(1.15)}100%{transform:scale(1)}}
+
+/* ═══ COUNTER ═══ */
+[data-count]{transition:opacity .3s}
+
+/* ═══ RESPONSIVE ═══ */
+@media(max-width:600px){
+  .page{padding:16px 14px 36px}
+  .stories{grid-template-columns:1fr}
+  .fgrid{grid-template-columns:1fr}
+  .fcard{padding:24px 16px 22px;border-radius:18px}
+  .tbar{gap:10px;flex-wrap:wrap}
+  .tbadges{gap:12px}
+  .compare{grid-template-columns:1fr;gap:0}
+  .cmp-m{padding:8px 0}.cmp-arr{transform:rotate(90deg)}
+}
+@media(prefers-reduced-motion:reduce){
+  .aurora .orb,.reveal{animation:none!important;transition:none!important;opacity:1!important;transform:none!important}
+  .fbtn{animation:none}
+}
+</style>
+</head>
+<body>
+
+<div class="aurora">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+</div>
+<div class="grain"></div>
+
+<div class="page">
+
+  <div class="ticker">⚡ ריבית הפריים עלתה ל-6.25% — זה הזמן לבדוק אם הריבית שלכם עדיין משתלמת</div>
+
+  <div class="tbar">
+    <span><span class="dot"></span> יועץ משכנתא עצמאי</span>
+    <span><span class="dot"></span> ליווי מלא עד חתימה</span>
+    <span><span class="dot"></span> +320 לקוחות חסכו השנה</span>
+  </div>
+
+  <section class="hero reveal">
+    <div class="badge">מחזור משכנתא</div>
+    <h1>הריבית שלכם <span class="rd">גבוהה מדי</span>.<br>אנחנו יודעים כי <span class="gr">בדקנו.</span></h1>
+    <p>אנחנו מנתחים את <b>התמהיל האישי שלכם</b> — מסלול מול מסלול, ריבית מול ריבית — ומגלים בדיוק איפה אתם משלמים יותר מדי ו<b>כמה אפשר להוריד</b>.</p>
+  </section>
+
+  <div class="compare reveal">
+    <div class="cmp cmp-b">
+      <div class="cmp-tag">הריבית שלכם היום</div>
+      <div class="cmp-num">5.2%</div>
+      <div class="cmp-lbl">₪4,800 החזר חודשי</div>
+      <div class="cmp-rate">פריים + 1.2% · קבועה 4.8%</div>
+    </div>
+    <div class="cmp-m"><div class="cmp-arr"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="#061828" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
+    <div class="cmp cmp-a">
+      <div class="cmp-tag">הריבית שנשיג לכם</div>
+      <div class="cmp-num">3.1%</div>
+      <div class="cmp-lbl">₪3,400 החזר חודשי</div>
+      <div class="cmp-rate">פריים + 0.5% · קבועה 3.2%</div>
+    </div>
+  </div>
+
+  <div class="gc savings reveal">
+    <div class="savings-n" data-count="1400">הפרש ריבית = ₪1,400 פחות בחודש</div>
+    <div class="savings-l">הורדת ריבית של 2.1% = חיסכון של ₪87,000+ על ההלוואה</div>
+    <div class="savings-s">*ממוצע בפועל. התוצאה שלכם תלויה בתמהיל, בסכום ובתקופה — לכן הבדיקה אישית.</div>
+  </div>
+
+  <div class="stories reveal">
+    <div class="gc story">
+      <span class="story-e">🏠</span>
+      <div class="story-t">משפחת כהן, ראשון לציון</div>
+      <div class="story-d">משכנתא ₪850K מ-2019. ריבית פריים+1.2% ומסלול קבוע 4.8%</div>
+      <div class="story-r"><span class="story-rn">הורדנו ריבית ל-3.1%</span><span class="story-rt">חיסכון ₪112,000 · ₪1,650 פחות בחודש — בלי להאריך תקופה</span></div>
+    </div>
+    <div class="gc story">
+      <span class="story-e">🔑</span>
+      <div class="story-t">יוסי, פתח תקווה</div>
+      <div class="story-d">משכנתא ₪1.2M מ-2021. ריבית קבועה 5.4% על 60% מהתמהיל</div>
+      <div class="story-r"><span class="story-rn">ריבית ירדה ל-3.5%</span><span class="story-rt">חיסכון ₪94,000 · פירקנו מסלול יקר, התאמנו תמהיל חדש אישית</span></div>
+    </div>
+  </div>
+
+  <div class="pains reveal">
+    <div class="pain"><div class="pain-i">📊</div><div class="pain-t">הריבית שלכם נקבעה <b>לפי תנאי השוק ביום החתימה</b> — מאז הכל השתנה</div></div>
+    <div class="pain"><div class="pain-i">🏦</div><div class="pain-t">הבנק <b>לא יתקשר להציע לכם ריבית נמוכה יותר</b> — זה לא האינטרס שלו</div></div>
+    <div class="pain"><div class="pain-i">🔍</div><div class="pain-t"><b>בלי ניתוח תמהיל מקצועי</b> — אתם לא יודעים איזה מסלול עולה לכם הכי הרבה</div></div>
+  </div>
+
+  <div class="cta-ban reveal">
+    <h2>⚡ נבדוק את הריבית שלכם — ונגיד לכם בדיוק כמה אפשר להוריד</h2>
+    <p>ניתוח תמהיל אישי. 10 דקות. חינם. בלי התחייבות.</p>
+  </div>
+
+  <div class="fcard reveal">
+    <div class="fh">
+      <div class="fh-eye">חינם ← ללא התחייבות</div>
+      <div class="fh-t">רוצים לדעת מה <span class="gr">הריבית שמגיעה לכם</span>?</div>
+      <div class="fh-s">השאירו פרטים — ותקבלו ניתוח תמהיל אישי תוך שעות</div>
+    </div>
+
+    <form id="leadForm">
+      <div class="fgrid">
+        <div class="fg">
+          <label class="fl">שם פרטי <span class="r">*</span></label>
+          <input class="fi" type="text" name="firstName" placeholder="הכניסו שם פרטי" required>
+        </div>
+        <div class="fg">
+          <label class="fl">שם משפחה <span class="r">*</span></label>
+          <input class="fi" type="text" name="lastName" placeholder="הכניסו שם משפחה" required>
+        </div>
+        <div class="fg">
+          <label class="fl">טלפון נייד <span class="r">*</span></label>
+          <input class="fi" type="tel" name="phone" placeholder="05X-XXXXXXX" required dir="ltr" style="text-align:right">
+        </div>
+        <div class="fg">
+          <label class="fl">כתובת מייל <span class="r">*</span></label>
+          <input class="fi" type="email" name="email" placeholder="your@email.com" required dir="ltr" style="text-align:right">
+        </div>
+        <div class="fg full">
+          <label class="fl">הבנק בו מנוהלת המשכנתא</label>
+          <select class="fsel" name="bank">
+            <option value="">בחרו בנק</option>
+            <option value="לאומי">לאומי</option>
+            <option value="מזרחי טפחות">מזרחי טפחות</option>
+            <option value="הפועלים">הפועלים</option>
+            <option value="דיסקונט">דיסקונט</option>
+            <option value="ירושלים">ירושלים</option>
+            <option value="מרכנתיל">מרכנתיל</option>
+            <option value="הבינלאומי">הבינלאומי</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit" class="fbtn"><span>שלחו לי ניתוח ריבית אישי — חינם ←</span></button>
+      <div class="fnote">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" stroke="#2BBFA0" stroke-width="1.8"/><path d="M9 12l2 2 4-4" stroke="#2BBFA0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        הפרטים מאובטחים. הניתוח מותאם אישית לתמהיל שלכם.
+      </div>
+    </form>
+
+    <div class="fsuc" id="suc">
+      <div class="fsuc-i">✅</div>
+      <h3>קיבלנו! מתחילים לעבוד על הניתוח שלכם</h3>
+      <p>ניתוח הריבית האישי שלכם בדרך.<br>נחזור אליכם תוך שעות עם המספרים המדויקים — כמה אפשר להוריד ואיך.</p>
+    </div>
+
+    <div class="tbadges">
+      <div class="tb"><div class="tb-i"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" stroke="#2BBFA0" stroke-width="1.8"/></svg></div>100% מאובטח</div>
+      <div class="tb"><div class="tb-i"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#2BBFA0" stroke-width="1.8"/><path d="M12 7v5l3 3" stroke="#2BBFA0" stroke-width="1.8" stroke-linecap="round"/></svg></div>מענה תוך שעות</div>
+      <div class="tb"><div class="tb-i"><svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="#2BBFA0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="#2BBFA0" stroke-width="1.8"/></svg></div>ללא התחייבות</div>
+    </div>
+  </div>
+
+  <div class="social reveal">
+    <div class="avs"><div class="av">א</div><div class="av">מ</div><div class="av">ד</div><div class="av">י</div><div class="av">+316</div></div>
+    <p><b>320+ לקוחות</b> כבר הורידו ריבית וחסכו ממוצע של ₪87,000</p>
+  </div>
+
+  <div class="foot"><p>מתפתחים פיננסית · יועץ משכנתא עצמאי · ליווי מלא מבדיקה ועד חתימה בבנק</p></div>
+
+</div>
+
+<script>
+// Scroll reveal
+var obs = new IntersectionObserver(function(entries) {
+  entries.forEach(function(e) {
+    if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(function(el) { obs.observe(el); });
+
+// Form
+document.getElementById('leadForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var f = e.target;
+  var d = { firstName:f.firstName.value, lastName:f.lastName.value, phone:f.phone.value, email:f.email.value, bank:f.bank.value, source:'michzur', page:location.href };
+  var W = 'YOUR_WEBHOOK_URL';
+  if (W !== 'YOUR_WEBHOOK_URL') fetch(W, { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(d) });
+  if (typeof fbq === 'function') fbq('track','Lead',{content_name:'michzur',currency:'ILS'});
+  f.style.display = 'none';
+  document.getElementById('suc').classList.add('on');
+});
+</script>
+
+</body>
+</html>
