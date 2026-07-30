@@ -191,6 +191,9 @@ img{max-width:100%;display:block}
 .form-input{width:100%;padding:13px 16px;background:rgba(255,255,255,.05);border:1.5px solid rgba(255,255,255,.1);border-radius:12px;font:500 15px/1 'Heebo',sans-serif;color:var(--white);outline:none;transition:border-color .2s,background .2s;direction:rtl}
 .form-input::placeholder{color:rgba(255,255,255,.25)}
 .form-input:focus{border-color:rgba(43,191,160,.5);background:rgba(255,255,255,.07)}
+.consent-row{display:flex;align-items:flex-start;gap:10px;margin-bottom:16px;cursor:pointer}
+.consent-row input{margin-top:3px;flex-shrink:0;width:16px;height:16px;accent-color:var(--teal)}
+.consent-row span{font-size:.78rem;color:rgba(255,255,255,.55);line-height:1.5}
 .form-submit{width:100%;padding:16px;background:linear-gradient(135deg,var(--teal),var(--teal-light));border:none;border-radius:14px;font:800 17px/1 'Heebo',sans-serif;color:var(--navy-deep);cursor:pointer;box-shadow:0 6px 24px rgba(43,191,160,.3);transition:transform .15s}
 .form-submit:hover{transform:translateY(-2px)}
 .form-note{text-align:center;margin-top:14px;font-size:.75rem;color:rgba(255,255,255,.3)}
@@ -550,6 +553,10 @@ footer{position:relative;z-index:1;border-top:1px solid var(--glass-border);padd
             <input class="form-input" type="email" name="email" placeholder="your@email.com" required dir="ltr" style="text-align:right">
           </div>
         </div>
+        <label class="consent-row">
+          <input type="checkbox" name="consent" required>
+          <span>אני מאשר/ת קבלת דיוור אלקטרוני (דוא״ל, SMS, וואטסאפ) בהתאם לחוק התקשורת <span class="req">*</span></span>
+        </label>
         <button type="submit" class="form-submit">לשליחת הפרטים ←</button>
         <div class="form-note">הפרטים מאובטחים. בלי ספאם. אני אחזור אליכם אישית.</div>
       </form>
@@ -570,7 +577,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--glass-border);padd
       <div class="eyebrow" style="justify-content:center;display:flex">💬 עוד לפני שנדבר</div>
       <h3>קהילת מתפתחים פיננסית</h3>
       <p>קבוצה פעילה עם ניתוח שוק שוטף, טיפים, ותשובות ישירות ממני — בלי מכירות, בלי לחץ.</p>
-      <a class="btn-primary" href="ads/lead-form-kehila.html">להצטרפות בחינם ←</a>
+      <a class="btn-primary" href="https://chat.whatsapp.com/LJh2VAm7ICA6qRV2RvZH70" target="_blank" rel="noopener">להצטרפות בחינם ←</a>
     </div>
   </div>
 </section>
@@ -647,10 +654,11 @@ document.getElementById('leadForm').addEventListener('submit', function (e) {
     phone: form.phone.value,
     email: form.email.value,
     interest: activeChip.textContent,
+    consent: form.consent.checked,
     source: 'homepage',
     page: window.location.href
   };
-  var WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbzlXOW0NYb-FCAWDzQpAAn8M4xPM01-E9InH6niEN-B7EENq-5zB1dwSx4-wpOF12r1/exec';
+  var WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbx3endPSXamoNPhEpmLylqRKZTSn2uNfJKwo4UL8hETatywXryKxxe9nHkWbr72ScQE/exec';
   // text/plain avoids a CORS preflight that Google Apps Script Web Apps can't answer; body is still JSON, parsed manually server-side
   fetch(WEBHOOK_URL, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(data) });
   if (typeof fbq === 'function') { fbq('track', 'Lead', { content_name: activeChip.dataset.interest, currency: 'ILS' }); }

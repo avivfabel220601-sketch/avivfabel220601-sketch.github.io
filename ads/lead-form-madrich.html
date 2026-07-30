@@ -133,6 +133,9 @@ h1{font-size:clamp(26px,5.5vw,42px);font-weight:900;color:var(--white);line-heig
 .form-input::placeholder{color:rgba(255,255,255,0.25)}
 .form-input:focus{border-color:rgba(43,191,160,0.5);box-shadow:0 0 0 3px rgba(43,191,160,0.1);background:rgba(255,255,255,0.07)}
 
+.consent-row{display:flex;align-items:flex-start;gap:8px;margin-bottom:14px;cursor:pointer}
+.consent-row input{margin-top:3px;flex-shrink:0;width:15px;height:15px;accent-color:var(--teal)}
+.consent-row span{font-size:11px;color:rgba(255,255,255,0.45);line-height:1.5}
 .form-submit{width:100%;padding:16px;background:linear-gradient(135deg,var(--teal),var(--teal-light));border:none;border-radius:14px;font:800 18px/1 'Heebo',sans-serif;color:var(--navy-deep);cursor:pointer;position:relative;overflow:hidden;transition:transform .15s,box-shadow .15s;box-shadow:0 4px 20px rgba(43,191,160,0.3)}
 .form-submit:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(43,191,160,0.4)}
 .form-submit:active{transform:translateY(0)}
@@ -279,6 +282,10 @@ h1{font-size:clamp(26px,5.5vw,42px);font-weight:900;color:var(--white);line-heig
           <input class="form-input" type="email" name="email" placeholder="your@email.com" required dir="ltr" style="text-align:right">
         </div>
       </div>
+      <label class="consent-row">
+        <input type="checkbox" name="consent" required>
+        <span>אני מאשר/ת קבלת דיוור אלקטרוני (דוא״ל, SMS, וואטסאפ) בהתאם לחוק התקשורת *</span>
+      </label>
       <button type="submit" class="form-submit"><span>שלחו לי את המדריך חינם ←</span></button>
       <div class="form-note">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" stroke="#2BBFA0" stroke-width="1.8"/><path d="M9 12l2 2 4-4" stroke="#2BBFA0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -312,8 +319,8 @@ h1{font-size:clamp(26px,5.5vw,42px);font-weight:900;color:var(--white);line-heig
 document.getElementById('leadForm').addEventListener('submit', function(e) {
   e.preventDefault();
   var form = e.target;
-  var data = { firstName: form.firstName.value, lastName: form.lastName.value, phone: form.phone.value, email: form.email.value, source: 'madrich', page: window.location.href };
-  var WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbzlXOW0NYb-FCAWDzQpAAn8M4xPM01-E9InH6niEN-B7EENq-5zB1dwSx4-wpOF12r1/exec';
+  var data = { firstName: form.firstName.value, lastName: form.lastName.value, phone: form.phone.value, email: form.email.value, consent: form.consent.checked, source: 'madrich', page: window.location.href };
+  var WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbx3endPSXamoNPhEpmLylqRKZTSn2uNfJKwo4UL8hETatywXryKxxe9nHkWbr72ScQE/exec';
   // text/plain avoids a CORS preflight that Google Apps Script Web Apps can't answer; body is still JSON, parsed manually server-side
   fetch(WEBHOOK_URL, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(data) });
   if (typeof fbq === 'function') { fbq('track', 'Lead', { content_name: 'madrich', currency: 'ILS' }); }
