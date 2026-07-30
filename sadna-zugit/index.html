@@ -346,9 +346,9 @@ document.getElementById('leadForm').addEventListener('submit', function(e) {
   e.preventDefault();
   var form = e.target;
   var data = { firstName: form.firstName.value, lastName: form.lastName.value, phone: form.phone.value, email: form.email.value, source: 'sadna-zugit', page: window.location.href };
-  var WEBHOOK_URL = 'YOUR_WEBHOOK_URL';
+  var WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbzlXOW0NYb-FCAWDzQpAAn8M4xPM01-E9InH6niEN-B7EENq-5zB1dwSx4-wpOF12r1/exec';
   // text/plain avoids a CORS preflight that Google Apps Script Web Apps can't answer; body is still JSON, parsed manually server-side
-  if (WEBHOOK_URL !== 'YOUR_WEBHOOK_URL') { fetch(WEBHOOK_URL, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(data) }); }
+  fetch(WEBHOOK_URL, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(data) });
   if (typeof fbq === 'function') { fbq('track', 'Lead', { content_name: 'sadna-zugit', currency: 'ILS', value: 990 }); }
   form.style.display = 'none';
   document.getElementById('formSuccess').classList.add('active');
