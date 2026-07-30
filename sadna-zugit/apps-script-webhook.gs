@@ -18,8 +18,8 @@ function doPost(e) {
     lead.phone || '',
     lead.email || '',
     lead.interest || '',
-    lead.consent ? 'כן' : 'לא',
     lead.source || '',
+    lead.consent ? 'כן' : 'לא',
     lead.page || ''
   ]);
 
@@ -34,6 +34,6 @@ function getOrCreateSheet() {
   if (existing) return existing;
 
   const sheet = spreadsheet.insertSheet(SHEET_NAME);
-  sheet.appendRow(['תאריך', 'שם פרטי', 'שם משפחה', 'טלפון', 'אימייל', 'נושא', 'אישור דיוור', 'מקור', 'עמוד']);
+  sheet.appendRow(['תאריך', 'שם פרטי', 'שם משפחה', 'טלפון', 'אימייל', 'נושא', 'מקור', 'אישור דיוור', 'עמוד']);
   return sheet;
 }
