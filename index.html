@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="facebook-domain-verification" content="tjp7odj2io7cv91a71uzwj5diaojxp">
-<title>מתפתחים פיננסית — ייעוץ משכנתאות עצמאי, מהתמונה המלאה</title>
-<meta name="description" content="יועץ משכנתא עצמאי שמלווה אתכם מהתמונה המלאה: משכנתא חדשה, מחזור, ליווי כלכלי ומו״מ מול הבנק. בלי ניגוד אינטרסים, מהבקשה הראשונה ועד החתימה.">
+<title>מתפתחים פיננסית — ליווי נקי, מהשורש ועד החתימה</title>
+<meta name="description" content="יועץ משכנתא עצמאי שמלווה אתכם מהשורש: משכנתא חדשה, מחזור, ליווי כלכלי ומו״מ מול הבנק. בלי ניגוד אינטרסים, מהבקשה הראשונה ועד החתימה.">
 <link rel="canonical" href="https://avivfabel220601-sketch.github.io/">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="he_IL">
-<meta property="og:title" content="מתפתחים פיננסית — ייעוץ משכנתאות עצמאי, מהתמונה המלאה">
+<meta property="og:title" content="מתפתחים פיננסית — ליווי נקי, מהשורש ועד החתימה">
 <meta property="og:description" content="יועץ משכנתא עצמאי, בלי ניגוד אינטרסים. משכנתא, מחזור וליווי כלכלי — באותה שיחה.">
 <meta property="og:image" content="https://avivfabel220601-sketch.github.io/assets/aviv-portrait.png">
 <meta property="og:url" content="https://avivfabel220601-sketch.github.io/">
@@ -149,6 +149,14 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 .process-body h3{font-size:1.05rem;font-weight:800;margin-bottom:4px}
 .process-body p{font-size:.88rem;color:rgba(255,255,255,.5);line-height:1.6}
 
+/* ══ TESTIMONIALS ══ */
+.testimonials{position:relative;z-index:1;padding:90px 0 70px;border-top:1px solid var(--glass-border)}
+.testi-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.testi-card{background:var(--glass);border:1px solid var(--glass-border);border-radius:20px;padding:28px 24px;display:flex;flex-direction:column}
+.testi-tag{display:inline-block;align-self:flex-start;font-size:.7rem;font-weight:800;color:var(--teal);background:rgba(26,188,156,.1);border-radius:999px;padding:5px 14px;margin-bottom:14px}
+.testi-quote{font-size:.92rem;line-height:1.75;color:rgba(255,255,255,.75);flex:1;margin-bottom:16px}
+.testi-author{font-size:.85rem;font-weight:800;color:var(--white)}
+
 /* ══ ABOUT ══ */
 .about{position:relative;z-index:1;padding:90px 0 70px;border-top:1px solid var(--glass-border)}
 .about-inner{display:flex;gap:48px;align-items:flex-start}
@@ -236,6 +244,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--glass-border);padd
   .tracks-svg{display:none}
   .service-grid,.service-grid.featured{grid-template-columns:1fr 1fr}
   .type-grid{grid-template-columns:1fr 1fr}
+  .testi-grid{grid-template-columns:1fr}
   .about-inner{flex-direction:column;gap:20px}
   .ws-card{flex-direction:column;text-align:center}
   .ws-photo{width:100%;max-width:280px}
@@ -281,7 +290,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--glass-border);padd
 <section class="hero">
   <div class="wrap hero-inner">
     <div class="hero-text">
-      <div class="hero-badge">🌱 ליווי מהתמונה המלאה — משכנתא · ליווי כלכלי</div>
+      <div class="hero-badge">🌱 ליווי נקי, מהשורש — משכנתא · ליווי כלכלי</div>
       <h1>משכנתא היא לא עסקה אחת.<br><span class="gr">היא תמונה שלמה.</span></h1>
       <p class="hero-p">רוב היועצים רואים ריבית. אני מסתכל גם על התקציב של הבית, גם על ההחלטות הכלכליות הגדולות, וגם על החיים שיש לכם מסביב למספר החודשי. <b>ייעוץ עצמאי, בלי ניגוד אינטרסים, מהבקשה הראשונה ועד החתימה.</b></p>
 
@@ -334,9 +343,9 @@ footer{position:relative;z-index:1;border-top:1px solid var(--glass-border);padd
 <!-- ════ BANK STRIP ════ -->
 <section class="bank-strip">
   <div class="wrap bank-strip-inner">
-    <div class="bank-strip-label">מנהל מו״מ ועובד מול כל הבנקים המובילים בישראל</div>
+    <div class="bank-strip-label">מנהל מו״מ ועובד מול כל הבנקים המובילים וגופים חוץ-בנקאיים בישראל</div>
     <div class="bank-strip-names">
-      <span>בנק לאומי</span><span>בנק הפועלים</span><span>בנק דיסקונט</span><span>מזרחי טפחות</span><span>הבנק הבינלאומי</span><span>בנק ירושלים</span>
+      <span>בנק לאומי</span><span>בנק הפועלים</span><span>בנק דיסקונט</span><span>מזרחי טפחות</span><span>הבנק הבינלאומי</span><span>בנק ירושלים</span><span>גופים חוץ-בנקאיים</span>
     </div>
   </div>
 </section>
@@ -347,7 +356,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--glass-border);padd
     <div class="section-head">
       <div class="eyebrow">🧭 מה אני עושה</div>
       <h2>כל סוג משכנתא.<br>אדם אחד שמלווה את כולה.</h2>
-      <p>שבעה סוגי משכנתא שונים לגמרי זה מזה בתנאים ובכללים — בודקים יחד לאיזה מהם אתם שייכים.</p>
+      <p>שמונה סוגי משכנתא שונים לגמרי זה מזה בתנאים ובכללים — בודקים יחד לאיזה מהם אתם שייכים.</p>
     </div>
     <div class="type-grid">
       <div class="type-card">
@@ -391,6 +400,12 @@ footer{position:relative;z-index:1;border-top:1px solid var(--glass-border);padd
         <h3>שיפוצים / כל מטרה</h3>
         <p>משתמשים בהון העצמי שכבר יש לכם בנכס — לשיפוץ או לכל מטרה אחרת, בלי למכור אותו.</p>
         <button type="button" class="service-link" data-interest="renovation">לייעוץ בנושא ←</button>
+      </div>
+      <div class="type-card">
+        <div class="type-icon">🔄</div>
+        <h3>משכנתא הפוכה</h3>
+        <p>בעלי בית מעל גיל 60? הופכים את השווי הצבור בנכס להכנסה שוטפת, בלי למכור ובלי החזר חודשי.</p>
+        <button type="button" class="service-link" data-interest="reverse-mortgage">לייעוץ בנושא ←</button>
       </div>
     </div>
 
@@ -480,21 +495,54 @@ footer{position:relative;z-index:1;border-top:1px solid var(--glass-border);padd
   </div>
 </section>
 
+<!-- ════ TESTIMONIALS ════ -->
+<section class="testimonials" id="testimonials">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">💬 לא רק אני אומר</div>
+      <h2>מה שקורה אחרי<br>שסיימנו לעבוד ביחד</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-tag">ליווי כלכלי · יחידים</div>
+        <p class="testi-quote">"לפני התהליך, החודש שלי היה מסתיים בחרדות ובמינוס שלא נגמר. התהליך עשה לי סדר מטורף – פתאום הבנתי לאן כל שקל הולך, הגדרנו יעדים ריאליים והתחלתי באמת לחסוך בצד בלי להרגיש שאני מחנק את עצמי. פעם ראשונה בחיים שאני מרגיש בשליטה מלאה על הכסף שלי!"</p>
+        <div class="testi-author">דניאל, בן 26</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-tag">סדנה זוגית + ליווי כלכלי</div>
+        <p class="testi-quote">"הגענו לסדנה הזוגית כשרצינו רק להפסיק לריב על כסף, ולא האמנו כמה רחוק נגיע. הסדנה פתחה לנו את העיניים והביאה אותנו לשיח פתוח ומקרב, והליווי המשיך איתנו יד ביד לבניית תוכנית עבודה זוגית. היום אנחנו עובדים כצוות, חוסכים יחד למטרה משותפת והשקט הנפשי בבית פשוט לא יסולא בפז."</p>
+        <div class="testi-author">מאור ושיר, בני 28</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-tag">משכנתא · מחיר למשתכן</div>
+        <p class="testi-quote">"כשזכינו במחיר למשתכן היינו אבודים לחלוטין מול כל הבירוקרטיה והטפסים. קיבלנו ליווי צמוד, מקצועי וסבלני שהסביר לנו כל צעד בגובה העיניים. בסופו של דבר קיבלנו תמהיל משכנתא מנצח שחסך לנו עשרות אלפי שקלים והותאם בדיוק ליכולות ההחזר שלנו. הדרך הכי נכונה להתחיל את הבית הראשון!"</p>
+        <div class="testi-author">עומר ונועה, בני 27</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-tag">מחזור משכנתא</div>
+        <p class="testi-quote">"במשך תקופה הרגשנו שההחזר החודשי של המשכנתא פשוט חונק אותנו והריביות רק עולות. בפגישת ניתוח אחת הבנו שיש מה לעשות. התהליך של המחזור נעשה במהירות ובמקצועיות, השיג לנו הורדה משמעותית בהחזר החודשי וחיסכון עצום בריביות לאורך השנים. אוויר לנשימה שקיבלנו מחדש!"</p>
+        <div class="testi-author">יוסי, בן 31</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ════ ABOUT ════ -->
 <section class="about" id="about">
   <div class="wrap about-inner">
     <div class="about-lede">
       <img class="about-avatar" src="assets/aviv-portrait.png" alt="אביב פבל" loading="lazy">
       <div class="eyebrow">מי מלווה אתכם</div>
-      <h2>יועץ "נקי" —<br>לא עוד איש מכירות</h2>
+      <h2>יועץ נקי.<br>לא עוד איש מכירות</h2>
     </div>
     <div class="about-body">
+      <p>אני אביב — יועץ משכנתאות עצמאי, ומקצר לכם: לא מוכר לכם שום דבר, לא מקבל עמלה מאף בנק, ולא בונה לכם תוכנית מהמדף. אני רואה אתכם, לא את התיק שלכם.</p>
       <p>אני לא כאן למכור לכם מוצר של בנק מסוים. אני יועץ משכנתא <b>עצמאי</b> — מה שאומר שאני עובד בשבילכם, לא בשביל שום גורם אחר.</p>
-      <p>אני מאמין שאי אפשר להסתכל על משכנתא בנפרד מהתמונה הכלכלית הרחבה יותר של הבית — התקציב, ההחלטות, לאן הכסף הולך בכל חודש. הכל מחובר — ולכן אני מלווה מהתמונה המלאה, לא רק מסתכל על הריבית הכי נמוכה.</p>
-      <div class="pull-quote gr">״המטרה היא לחיות איתה — ולא עבורה.״</div>
+      <p>אני מאמין שאי אפשר להסתכל על משכנתא בנפרד מהתמונה הכלכלית הרחבה יותר של הבית — התקציב, ההחלטות, לאן הכסף הולך בכל חודש. הכל מחובר — ולכן אני מלווה מהשורש, לא רק מסתכל על הריבית הכי נמוכה.</p>
+      <div class="pull-quote gr">״המטרה היא לחיות עם המשכנתא — ולא לעבוד עבורה.״</div>
       <div class="value-row">
         <div class="value-chip">🔓 ייעוץ עצמאי, ללא ניגוד אינטרסים</div>
-        <div class="value-chip">🧩 התמונה המלאה — לא רק המשכנתא</div>
+        <div class="value-chip">🧩 מהשורש — לא רק המשכנתא</div>
         <div class="value-chip">🤝 מלווה עד הסוף, לא רק חותם</div>
       </div>
     </div>
@@ -538,6 +586,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--glass-border);padd
         <button type="button" class="interest-chip" data-interest="business-mortgage">משכנתא עסקית</button>
         <button type="button" class="interest-chip" data-interest="loan-consolidation">איחוד הלוואות</button>
         <button type="button" class="interest-chip" data-interest="renovation">שיפוצים / כל מטרה</button>
+        <button type="button" class="interest-chip" data-interest="reverse-mortgage">משכנתא הפוכה</button>
         <button type="button" class="interest-chip" data-interest="financial-guidance">ליווי כלכלי</button>
         <button type="button" class="interest-chip" data-interest="unsure">עדיין בודק/ת</button>
       </div>
