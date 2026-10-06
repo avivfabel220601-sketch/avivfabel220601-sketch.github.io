@@ -2,6 +2,7 @@
 <html lang="he" dir="rtl">
 <head>
 <meta charset="UTF-8">
+<meta name="robots" content="noindex, follow">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>בדיקת משכנתא חינם — גלו כמה תחסכו | מתפתחים פיננסית</title>
 <meta name="description" content="72% מבעלי המשכנתאות משלמים ריבית גבוהה מהנדרש. בדיקה חינם תוך 10 דקות — גלו כמה תחסכו. ללא התחייבות.">
@@ -395,6 +396,7 @@ h1{font-size:clamp(26px,5.5vw,40px);font-weight:900;line-height:1.18;margin-bott
       <div class="fsuc-i">✅</div>
       <h3>קיבלנו! מתחילים לעבוד על הניתוח שלכם</h3>
       <p>ניתוח הריבית האישי שלכם בדרך.<br>נחזור אליכם תוך שעות עם המספרים המדויקים — כמה אפשר להוריד ואיך.</p>
+      <a id="sucWa" class="fbtn" style="display:block;margin-top:18px;text-align:center;text-decoration:none" href="#" target="_blank" rel="noopener"><span>או דברו איתנו עכשיו בוואטסאפ ←</span></a>
     </div>
 
     <div class="tbadges">
@@ -431,6 +433,8 @@ document.getElementById('leadForm').addEventListener('submit', function(e) {
   // text/plain avoids a CORS preflight that Google Apps Script Web Apps can't answer; body is still JSON, parsed manually server-side
   fetch(W, { method:'POST', headers:{'Content-Type':'text/plain;charset=utf-8'}, body:JSON.stringify(d) });
   if (typeof fbq === 'function') fbq('track','Lead',{content_name:'michzur',currency:'ILS'});
+  var waMsg = 'היי, ' + d.firstName + ' כאן, מילאתי טופס לבדיקת ריבית משכנתא — רוצה לתאם את הניתוח';
+  document.getElementById('sucWa').href = 'https://wa.me/972507696147?text=' + encodeURIComponent(waMsg);
   f.style.display = 'none';
   document.getElementById('suc').classList.add('on');
 });

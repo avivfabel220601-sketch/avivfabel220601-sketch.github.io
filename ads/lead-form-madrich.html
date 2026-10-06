@@ -2,6 +2,7 @@
 <html lang="he" dir="rtl">
 <head>
 <meta charset="UTF-8">
+<meta name="robots" content="noindex, follow">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>המדריך החינמי לרכישת דירה חכמה | מתפתחים פיננסית</title>
 <meta name="description" content="הטעויות שעולות ₪100,000+ ואיך להימנע מהן. המדריך המלא לכל מי שחושב לקנות דירה — חינם, ללא התחייבות.">
@@ -297,6 +298,7 @@ h1{font-size:clamp(26px,5.5vw,42px);font-weight:900;color:var(--white);line-heig
       <div class="form-success-icon">📖</div>
       <h3>המדריך בדרך אליכם!</h3>
       <p>תודה רבה! המדריך יישלח אליכם תוך דקות ספורות.<br>בדקו את תיבת המייל שלכם.</p>
+      <a id="sucWa" class="form-submit" style="display:block;margin-top:16px;text-align:center;text-decoration:none" href="#" target="_blank" rel="noopener"><span>או קבלו אותו עכשיו בוואטסאפ ←</span></a>
     </div>
 
     <div class="trust-badges">
@@ -324,6 +326,8 @@ document.getElementById('leadForm').addEventListener('submit', function(e) {
   // text/plain avoids a CORS preflight that Google Apps Script Web Apps can't answer; body is still JSON, parsed manually server-side
   fetch(WEBHOOK_URL, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(data) });
   if (typeof fbq === 'function') { fbq('track', 'Lead', { content_name: 'madrich', currency: 'ILS' }); }
+  var waMsg = 'היי, ' + data.firstName + ' כאן, מילאתי טופס למדריך הנדל״ן — רוצה לקבל אותו';
+  document.getElementById('sucWa').href = 'https://wa.me/972507696147?text=' + encodeURIComponent(waMsg);
   form.style.display = 'none';
   document.getElementById('formSuccess').classList.add('active');
 });
